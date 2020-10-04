@@ -2,22 +2,27 @@ body, button, input {
   font-family: 'Montserrat', sans-serif;
 }
 
-body {
-  margin: 72px 140px 0;
-}
-
 h1 {
+  text-align: center;
   font-weight: 800;
   font-size: 74px;
   margin-bottom: 42px;
-  margin-left: 390px;
   cursor: default;
   user-select: none;
 }
 
+div.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
 #controls {
-  display: inline-block;
-  width: 46%;
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
   border-right: 1px solid rgba(0, 0, 0, .5);
   padding-bottom: 42px;
   padding-right: 42px;
@@ -52,7 +57,15 @@ input:disabled {
   opacity: .6;
 }
 
+div.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 button {
+  margin: 0 5px;
   font-size: 17px;
   padding: 12px 70px;
   background-color: #222;
@@ -71,7 +84,6 @@ button:disabled {
 }
 
 h2 {
-  display: inline-block;
   vertical-align: top;
   font-weight: 200;
   font-size: 144px;
